@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(231, 233, 243);
+}
+
+/*Menu desplegable*/
+
+header {
+    background-color: rgb(189, 200, 238);
+}
+
+#menuDesplegable {
+    display: none
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid;
+}
+
+header label:hover {
+    cursor:pointer;
+    background-color: rgb(162, 188, 236);
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    font-size: 20px;
+    flex-grow: 1;
+}
+
+.menu li:hover {
+    background-color: cornflowerblue;
+}
+
+.opcionesMenu {
+    display: block;
+    padding: 15px 20px;
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s; 
+}
+
+.opcionesMenu a {
+    text-decoration: none;
+    color:black; 
+}
+
+@media (max-width: 768px){
+
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        z-index: 1;
+        background-color:rgb(189, 200, 238);
+        width: 60%;
+        margin-left: -60%;
+        transition:all 1s;
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li {
+        border-top: 1px solid white;
+        text-align: left;
+    }
+
+    #menuDesplegable:checked ~ .menu {
+        margin: 0; 
+    }
+}
+
+
+/*Página principal*/
+
+.tituloUno {
+    color: rgb(37, 34, 179);
+    font-weight: bold;
+    font-style:normal;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 70%;
+}
+
+.underTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+/*para sobreescribir bootstrap*/
+.link {
+    background-color:rgb(210, 213, 241);
+    border: double;
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color:rgb(8, 22, 104);
+}
+
+/*Footer*/
+
+.titulo-footer {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(57, 57, 204);
+    padding: 30px 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(189, 200, 238);
+}
+
+.titulo-seccion {
+    align-content: center;
+}
+
+
+/*Para sobreescribir bootstrap*/
+.footer-info-container-xl {
+    text-align: center;
+    color: black;
+}
+.footer-info-container-xl h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*Quienes somos*/
+
+.quienesSomos {
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.quienesSomos p {
+    font-size: 1rem;
+    background-color: rgb(210, 210, 245);
+    line-height: 30px;
+}
+
+
+/*Productos*/
+
+.grilla-productos {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 10px;
+    grid-template-rows: auto;
+}
+
+.product-card {
+    line-height: 30px;
+}
+
+.product-card h2 {
+    border: double;
+    background-color: lightcoral;
+    text-align: center;
+}
+
+.product-card li {
+    text-align: center;
+    list-style-type: none;
+}
+
+
+/*Máquinas*/
+
+.tabla_maquinas {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo_maquina {
+    text-align: center;
+    background-color:black;
+    color: rgb(231, 107, 107);
+    padding: 20px 20px;
+    font-style: italic;
+}
+
+.titulosTabla {
+    color:rgb(3, 3, 3);
+    background-color: lightcoral;
+}
+
+.recomList {
+    line-height:30px;
+    font-size: 20px;
+
+}

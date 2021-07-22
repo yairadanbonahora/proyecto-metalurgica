@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Para más información sobre cualquier producto o máquina, contáctese con nosotros">
+    <meta name="keywords" content="Metalúrgica Claudio, información, contacto">
+    <title>Metalúrgica Claudio - Contacto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menuDesplegable">
+        <label for="menuDesplegable"><img src="img/botonmenu.png" alt="botón"></label>
+        <nav class="menu">
+            <a class="logo">
+                <img src="img/logo.png" alt="logo" width="50px">
+            </a>
+            <ul>
+                <li class=opcionesMenu><a href="index.html">Inicio</a></li>
+                <li class=opcionesMenu><a href="quienesomos.html">Quiénes somos</a></li>
+                <li class=opcionesMenu><a href="productos.html">Productos</a></li>
+                <li class=opcionesMenu><a href="maquinas.html">Máquinas</a></li>
+                <li class=opcionesMenu><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Contáctenos</h1>
+    <h2>Para mayor infromación respecto a la empresa y/o cualquier prodcuto ofrecido, no dude en consultarnos completando el siguiente formulario</h2>
+
+    <form>
+        <fieldset>
+            <legend>Consúltenos</legend>
+                <div>
+                    <label for="user-name">Nombre:</label>
+                    <input name="user-name" type="text" placeholder="Tu nombre" required autofocus>
+                </div>
+                <div>
+                    <label for="e-mail">E-mail:</label>
+                    <input name="e-mail" type="email" placeholder="Tu mail">
+                </div>
+                <div>
+                    <label for="telephone">Celular</label>
+                    <input name="telephone" type="number" placeholder="Sin 0 ni 15">
+                </div>
+                <div>
+                    <label for="title">Consultar sobre</label>
+                    <select name="title" id="title">
+                        <option value="" selected>Selecciona</option>
+                        <option value="Producto">Producto</option>
+                        <option value="Maquina">Máquina</option>
+                    </select>
+                    </label>   
+                </div>
+                <div>
+                    <label for="text"></label>
+                    <textarea cols="50" rows="10"></textarea>    
+                </div>
+            </legend>  
+                
+            <legend>Prefiero recibir info en:</legend>
+                <div>
+                    <label for="check">Celular</label>
+                    <input name="check" type="checkbox">
+                    <label for="check">E-mail</label>
+                    <input name="check" type="checkbox">
+                </div>
+                <div>
+                    <input name="enviar" type="submit" value="Enviar">
+                </div>
+                <div>
+                    <input name="resetear" type="reset" value="Resetear">
+                </div>
+        </fieldset>
+    </form>
+</body>
+</html>
